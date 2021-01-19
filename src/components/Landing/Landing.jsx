@@ -8,7 +8,6 @@ const Landing = () => {
   const { countries } = useContext(Context);
   return (
     <section className="landing">
-      Landing
       <FilterCountries />
       <Countries countries={countries} />
     </section>
