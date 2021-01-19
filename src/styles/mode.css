@@ -1,0 +1,29 @@
+/* ============================= */
+/* LIGHT MODE */
+/* ============================= */
+.light_mode {
+  background-color: var(--lightMode-background) !important;
+}
+.light_mode,
+.light_mode * {
+  color: var(--lightMode-text) !important;
+}
+.light_mode .elements {
+  background-color: var(--lightMode-elements) !important;
+  box-shadow: 0 0 10px #d8d8d8 !important;
+}
+
+/* ============================= */
+/* DARK MODE */
+/* ============================= */
+.dark_mode {
+  background-color: var(--darkMode-background) !important;
+}
+.dark_mode,
+.dark_mode * {
+  color: var(--darkMode-text) !important;
+}
+.dark_mode .elements {
+  background-color: var(--darkMode-elements) !important;
+  box-shadow: 0 0 10px #1a2022 !important;
+}
