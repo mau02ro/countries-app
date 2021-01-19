@@ -1,0 +1,14 @@
+header {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.header_wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -10,6 +10,9 @@
 }
 .light_mode .elements {
   background-color: var(--lightMode-elements) !important;
+}
+
+.light_mode .shadow {
   box-shadow: 0 0 10px #d8d8d8 !important;
 }
 
@@ -25,5 +28,8 @@
 }
 .dark_mode .elements {
   background-color: var(--darkMode-elements) !important;
+}
+
+.dark_mode .shadow {
   box-shadow: 0 0 10px #1a2022 !important;
 }

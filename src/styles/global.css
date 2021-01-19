@@ -25,3 +25,8 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.global_wrapper {
+  width: 83%;
+  margin: 0 auto;
+}
