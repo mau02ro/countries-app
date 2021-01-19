@@ -1,9 +1,5 @@
 import { createContext } from "react";
 
-const STATE = {
-  mode: "dark",
-};
+const Context = createContext({});
 
-const context = createContext(STATE);
-
-export default context;
+export default Context;

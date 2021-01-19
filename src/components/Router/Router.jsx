@@ -1,12 +1,15 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "../Layout";
+import Landing from "../Landing";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Layout>
-        <Switch></Switch>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+        </Switch>
       </Layout>
     </BrowserRouter>
   );

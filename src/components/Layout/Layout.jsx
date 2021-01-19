@@ -1,14 +1,14 @@
 import { useContext } from "react";
+
 import Context from "../../hooks/context";
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   const state = useContext(Context);
 
   return (
-    <div className="">
-      Layout
+    <div className="layout">
       {console.log(state)}
-      {props.children}
+      {children}
     </div>
   );
 };
