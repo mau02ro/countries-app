@@ -1,12 +1,14 @@
 import "./FilterCountries.css";
 
-const FilterCountries = () => {
+const FilterCountries = ({ name, setName }) => {
   return (
     <div className="filterCountries">
       <input
         type="text"
         className="conatiner shadow_item filter_input"
         placeholder="Search for a country . . ."
+        value={name}
+        onChange={(e) => setName(e.target.value)}
       />
 
       <select name="select" className="conatiner shadow_item filter_select">

@@ -7,11 +7,13 @@ import Countries from "../Countries";
 
 const Landing = () => {
   const { countries } = useContext(Context);
-  const { query, setQuery, filterData } = filterByName(countries);
+  const { name, setName, setRegion, region, filterData } = filterByName(
+    countries
+  );
 
   return (
     <section className="landing">
-      <FilterCountries query={query} setQuery={setQuery} />
+      <FilterCountries name={name} setName={setName} />
       <Countries countries={filterData} />
     </section>
   );
