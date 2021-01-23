@@ -8,12 +8,15 @@
 .light_mode * {
   color: var(--lightMode-text) !important;
 }
-.light_mode .elements {
+.dark_mode .conatiner {
   background-color: var(--lightMode-elements) !important;
 }
 
 .light_mode .shadow {
-  box-shadow: 0 0 10px #d8d8d8 !important;
+  box-shadow: 0 0 10px #d8d8d8;
+}
+.light_mode .shadow_item {
+  box-shadow: 4px 4px 3px #d8d8d87d;
 }
 
 /* ============================= */
@@ -26,10 +29,14 @@
 .dark_mode * {
   color: var(--darkMode-text) !important;
 }
-.dark_mode .elements {
+.dark_mode .conatiner {
   background-color: var(--darkMode-elements) !important;
 }
 
 .dark_mode .shadow {
-  box-shadow: 0 0 10px #1a2022 !important;
+  box-shadow: 0 0 10px #1a2022;
+}
+
+.dark_mode .shadow_item {
+  box-shadow: 4px 4px 3px #1a202263;
 }

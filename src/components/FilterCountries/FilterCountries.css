@@ -1,0 +1,48 @@
+.filterCountries {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.filter_select,
+.filter_input {
+  padding: 12px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.filter_input:focus,
+.filter_select:focus {
+  outline: none;
+}
+
+.filter_input,
+.filter_input *,
+.filter_select,
+.filter_select * {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Search Input */
+.filter_input {
+  width: 100%;
+  max-width: 400px;
+}
+.filter_input::placeholder {
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Select */
+.filter_select {
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  height: auto;
+}
+.filter_select option:first-child {
+  display: none;
+}
+.filter_select option {
+  padding: 5px 10px;
+  font-family: inherit;
+}
