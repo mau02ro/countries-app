@@ -2,12 +2,14 @@ import { useState, useMemo } from "react";
 
 function useFilter(data) {
   const [name, setName] = useState("");
-  const [region, setRegion] = useState("Americas");
+  const [region, setRegion] = useState("All");
   const [filterData, setFilterData] = useState(data);
   useMemo(() => {
     let f_r = (() => {
-      if (region !== "all") {
-        return data.filter((item) => item.region === region);
+      if (region.toLowerCase() !== "all") {
+        return data.filter(
+          (item) => item.region.toLowerCase() === region.toLowerCase()
+        );
       }
       return data;
     })();
